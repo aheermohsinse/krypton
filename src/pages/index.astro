@@ -325,88 +325,20 @@ const title = 'Home'
 
             <!-- Tabs content wrapper -->
             <div class="flying-tabs-content">
-              <!-- Tab 1 -->
-              <div class="tab-content" :class=`{
-                  'is-active': activeTab === 'tab-1',
-                  '': activeTab != 'tab-1'
-              }`>
-                <div class="columns is-vcentered tab-content-wrapper">
-                  <!-- ICO Terms -->
-                  <div class="column is-5 is-offset-1">
-                    <div class="text-content">
-                      <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">ICO TERMS</h4>
-                      <ul class="custom-bullet-list">
-                        <li class="animated preFadeInUp fadeInUp">
-                          <span>Presale</span>
-                          <br />
-                          <span class="item-content">Presale starts on Apr 8 2023 (9:00am GMT)</span>
-                        </li>
-                        <li class="animated preFadeInUp fadeInUp">
-                          <span>Sale</span>
-                          <br />
-                          <span class="item-content">Trading Bots sales starts on Jun 8 2023 (12:00am GMT)</span>
-                        </li>
-                        <li class="animated preFadeInUp fadeInUp">
-                          <span>Bonus</span>
-                          <br />
-                          <span class="item-content">Bonus starts on July 29 2023 (12:00am GMT)</span>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- ICO COuntdown -->
-                  <div class="column is-5">
-                    <!-- Card -->
-                    <div x-data="initCountdown()" x-init="setupCountdown()" class="ico-card animated preFadeInUp fadeInUp">
-                      <!-- Countdown -->
-                      <ul id="countdown" class="is-ico">
-                        <li id="days">
-                          <div id="days-count" class="timer-number">00</div>
-                          <div class="label">Days</div>
-                        </li>
-                        <li id="hours">
-                          <div id="hours-count" class="timer-number">00</div>
-                          <div class="label">Hours</div>
-                        </li>
-                        <li id="minutes">
-                          <div id="minutes-count" class="timer-number">00</div>
-                          <div class="label">Minutes</div>
-                        </li>
-                        <li id="seconds">
-                          <div id="seconds-count" class="timer-number">00</div>
-                          <div class="label">Seconds</div>
-                        </li>
-                      </ul>
-                      <!-- Progress bar -->
-                      <div class="progress-block">
-                        <!-- Tags -->
-                        <div class="progress-tags">
-                          <div>Presale</div>
-                          <div>Soft Cap</div>
-                          <div>Bonus</div>
-                        </div>
-                        <progress class="progress ico-progress" value="65" max="100"> 65% </progress>
-                      </div>
 
-                      <!-- Button -->
-                      <!-- <div class="button-block">
-                        <a href="#" class="button k-button k-secondary raised has-gradient is-bold is-fullwidth rounded">
-                          <span class="text"></span>
-                          <span class="front-gradient"></span>
-                        </a>
-                      </div> -->
 
-                      <!-- Icons -->
-                      <div class="icon-block">
-                        <i class="cf cf-btc"></i>
-                        <i class="cf cf-eth"></i>
-                        <i class="cf cf-ltc"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /Tab 1 -->
+
+
+
+
+
+
+              
+
+
+              
+
+
 
               <!-- Tab 2 -->
               <div
@@ -527,6 +459,117 @@ const title = 'Home'
                 </div>
               </div>
               <!-- /Tab 4 -->
+
+
+              <!-- Tab 1 -->
+              <div class="tab-content" :class=`{
+                'is-active': activeTab === 'tab-1',
+                '': activeTab != 'tab-1'
+            }`>
+              <div class="columns is-vcentered tab-content-wrapper">
+                <!-- ICO Terms -->
+                <div class="column is-5 is-offset-1">
+                  <div class="text-content">
+                    <h4 class="title is-6 is-light animated preFadeInUp fadeInUp">ICO TERMS</h4>
+                    <ul class="custom-bullet-list">
+                      <li class="animated preFadeInUp fadeInUp">
+                        <span>Presale</span>
+                        <br />
+                        <span class="item-content">Presale starts on Apr 8 2023 (9:00am GMT)</span>
+                      </li>
+                      <li class="animated preFadeInUp fadeInUp">
+                        <span>Sale</span>
+                        <br />
+                        <span class="item-content">Trading Bots sales starts on Jun 8 2023 (12:00am GMT)</span>
+                      </li>
+                      <li class="animated preFadeInUp fadeInUp">
+                        <span>Bonus</span>
+                        <br />
+                        <span class="item-content">Bonus starts on July 29 2023 (12:00am GMT)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- ICO COuntdown -->
+                <div class="column is-5">
+                  <!-- Card -->
+                  <div x-data="initCountdown()" x-init="setupCountdown()" class="ico-card animated preFadeInUp fadeInUp">
+                    <!-- Countdown -->
+                    <ul id="countdown" class="is-ico">
+                      <li id="days">
+                        <div id="days-count" class="timer-number">00</div>
+                        <div class="label">Days</div>
+                      </li>
+                      <li id="hours">
+                        <div id="hours-count" class="timer-number">00</div>
+                        <div class="label">Hours</div>
+                      </li>
+                      <li id="minutes">
+                        <div id="minutes-count" class="timer-number">00</div>
+                        <div class="label">Minutes</div>
+                      </li>
+                      <li id="seconds">
+                        <div id="seconds-count" class="timer-number">00</div>
+                        <div class="label">Seconds</div>
+                      </li>
+                    </ul>
+                    <!-- Progress bar -->
+                    <div class="progress-block">
+                      <!-- Tags -->
+                      <div class="progress-tags">
+                        <div>Presale</div>
+                        <div>Soft Cap</div>
+                        <div>Bonus</div>
+                      </div>
+                      <progress class="progress ico-progress" value="65" max="100"> 65% </progress>
+                    </div>
+
+                    <!-- Button -->
+                    <!-- <div class="button-block">
+                      <a href="#" class="button k-button k-secondary raised has-gradient is-bold is-fullwidth rounded">
+                        <span class="text"></span>
+                        <span class="front-gradient"></span>
+                      </a>
+                    </div> -->
+
+                    <!-- Icons -->
+                    <div class="icon-block">
+                      <i class="cf cf-btc"></i>
+                      <i class="cf cf-eth"></i>
+                      <i class="cf cf-ltc"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Tab 1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
           </div>
         </div>
@@ -566,12 +609,13 @@ const title = 'Home'
                   Stay informed and in control with seamless access to all your trade activities through our platform. Algo X ensures that you can monitor bot performance, track live trades, and access real-time results from any device, at any time. Stay connected and make smarter trading decisions with full visibility into your trading journey.
                 </p>
                 <!-- CTA -->
-                <div class="cta-wrapper">
+                <!-- <div class="cta-wrapper">
                   <a href="#" class="button k-button k-primary raised has-gradient is-fat is-bold">
                     <span class="text">Download App</span>
                     <span class="front-gradient"></span>
                   </a>
                 </div>
+                 -->
               </div>
             </div>
             <!-- Featured image -->
@@ -883,7 +927,7 @@ const title = 'Home'
                     <label class="accordion-title" for="toggle7"> Can I use Algo X for cryptocurrency trading ?                    </label>
                     <div class="accordion-content">
                       <p>
-                        es, Algo X Trading supports a variety of assets, including cryptocurrencies, forex, and commodities. It is designed to adapt to the unique conditions of each market.
+                        Yes, Algo X Trading supports a variety of assets, including cryptocurrencies, forex, and commodities. It is designed to adapt to the unique conditions of each market.
                       </p>
                     </div>
                   </div>
@@ -1056,12 +1100,12 @@ const title = 'Home'
             </div>
 
             <!-- CTA -->
-            <div class="cta-wrapper has-text-centered">
+            <!-- <div class="cta-wrapper has-text-centered">
               <a href="#" class="button k-button k-primary raised has-gradient is-fat is-bold">
                 <span class="text">More Articles</span>
                 <span class="front-gradient"></span>
               </a>
-            </div>
+            </div> -->
 
             <!-- Partner logos -->
             <div class="partners">
